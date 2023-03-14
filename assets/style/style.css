@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Akshar&family=Anybody:wght@300&family=DM+Sans:wght@400;700&family=Inter:wght@300&family=Koulen&family=Roboto:wght@400;500;700&family=Source+Code+Pro&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.basic {
+    --bg-color: #EDF2FF;
+    --text-color: #00082F;
+    --primary-color: #4263EB;
+    --primary-color-dark: #364FC7;
+}
+
+.dark-blue {
+    --bg-color: #00082F;
+    --text-color: #EDF2FF;
+    --primary-color: #4263EB;
+    --primary-color-dark: #364FC7;
+}
+
+.pink {
+    --bg-color: #FFF0F6;
+    --text-color: #1F000B;
+    --primary-color: #D6336C;
+    --primary-color-dark: #F61E4D;
+}
+
+.dark-pink {
+    --bg-color: #1F000B;
+    --text-color: #FFF0F6;
+    --primary-color: #D6336C;
+    --primary-color-dark: #F61E4D;
+}
+
+
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    position: relative;
+    animation: animatetop 0.4s;
+}
+
+button {
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    text-align: center;
+    width: 300px;
+    margin: 60px auto;
+}
+
+.imagem-logo {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    padding: 3.7px;
+    border: var(--primary-color) solid 4px;
+    transition-duration: 0.4s;
+}
+
+.imagem-logo:hover {
+    transform: scale(1.2);
+
+}
+
+h1 {
+    font-size: 32px;
+    margin-top: 24px;
+    margin-bottom: 8px;
+}
+
+p {
+    font-family: 'Roboto Mono', monospace;
+    opacity: 0.8;
+    font-size: 18px;
+}
+
+ul {
+    list-style: none;
+    margin: 48px 0;
+}
+
+ul li a {
+    height: 53px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary-color);
+    color: #feffff;
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-bottom: 16px;
+    border-radius: 6px;
+    transition: background 400ms;
+}
+
+ul li a:hover {
+    background-color: var(--primary-color-dark);
+}
+
+footer {
+    font-weight: 500;
+    font-size: 12px;
+    opacity: 0.6;
+}
+
+
+
+@keyframes animatetop {
+    from {
+        top: -800px;
+        opacity: 0
+    }
+
+    to {
+        top: 0;
+        opacity: 1
+    }
+}
